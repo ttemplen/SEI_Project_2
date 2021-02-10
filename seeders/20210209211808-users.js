@@ -8,6 +8,7 @@ module.exports = {
         {
           name: "Todd T",
           username: "tt",
+          userpassword: "tt",
           areafished: "SW Wisconsin",
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -15,6 +16,7 @@ module.exports = {
         {
           name: "Eric J",
           username: "ej",
+          userpassword: "ej",
           areafished: "SW Wisconsin",
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -22,6 +24,7 @@ module.exports = {
         {
           name: "Andy K",
           username: "ak",
+          userpassword: "ak",
           areafished: "NE Wisconsin",
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -29,6 +32,7 @@ module.exports = {
         {
           name: "Bob K",
           username: "bk",
+          userpassword: "bk",
           areafished: "NE Wisconsin",
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -36,6 +40,7 @@ module.exports = {
         {
           name: "Steve H",
           username: "sh",
+          userpassword: "sh",
           areafished: "Central Wisconsin",
           createdAt: new Date(),
           updatedAt: new Date(),

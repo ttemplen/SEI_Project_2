@@ -27,7 +27,7 @@ router.post('/login', (req, res)=>{
     User.findOne({
         where:{
             username:req.body.username,
-            password:req.body.password
+            userpassword:req.body.userpassword
         }
     }) .then((thisUser)=>{
         res.redirect('/users/profile/'+ thisUser.id)
