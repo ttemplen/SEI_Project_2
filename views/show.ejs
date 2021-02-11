@@ -12,13 +12,18 @@
     <h1>Fishing report show page</h1>
 
    The fish species caught was a <br/>
-   <%=fish.species%> .
-<div id="fishimg">
+   <%=fish.species%> .<br/> <br/>
+   Fishing report. <br/>
+   <%=fish.text%><br/><br/>
+   The fish was caught by <br/>
+   <%=fish.caughtby%> .<br/><br/>
 
-    <img src="<%=fish.img%>" alt="Fish Picture">
-</div>
+
+    <img src="<%=fish.img%>" alt="Fish Picture"><br/><br/>
+
 <form action="/fishes/<%= fish.id %>?_method=DELETE" method="POST">
     <input type="submit" value="DELETE <%= fish.species %>" />
 </form>
+<a href="/fishes">View all Fishing posts!</a>
 </body>
 </html>

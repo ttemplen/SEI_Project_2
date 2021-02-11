@@ -10,17 +10,18 @@
         <!--  ADD action attribute to form tag-->
         <form action="/fishes/<%=fishes.id%>?_method=PUT" method="POST">
             <!--  NOTE: the form is pre-populated with values for the server-->
-            Species: <input type="text" name="species" value="<%=fishes.species%>" /><br />
-            Image: <input type="text" name="img" value="<%=fishes.img%>" /><br />
-            Caught by: <input type="text" name="caughtby" value="<%=fishes.caughtby%>" /><br />
+            Species caught.: <input type="text" name="species" value="<%=fishes.species%>" /><br />
+            Input link to image : <input type="text" name="img" value="<%=fishes.img%>" /><br />
+            Caught by, input username.: <input type="text" name="caughtby" value="<%=fishes.caughtby%>" /><br />
             Where caught: <input type="text" name="wherecaught" value="<%=fishes.wherecaught%>" /><br />
-            Text:<textarea name="text" cols="30" rows="20"></textarea><br />
+            Fishing report text:<textarea name="text" cols="30" rows="20"></textarea><br />
            
             
             <h3>
             
-                <input type="submit" name="" value="Edit Fish" />
+                <input type="submit" name="" value="Update fishing report" />
             </h3>
+            <a href="/fishes">View all Fishing posts!</a>
         
         
         
