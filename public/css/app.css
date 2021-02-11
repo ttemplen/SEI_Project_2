@@ -1,5 +1,13 @@
 body{
     color: red;
-    /* background-image: url(https://i.imgur.com/n72DnVx.jpg); */
+    *
     
+}
+.fishimg {
+    max-width: 30%;
+    max-height: fit-content;
+         
+}
+img{
+    max-width: 300px;
 }

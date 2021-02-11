@@ -50,14 +50,15 @@ router.get("/:id/edit", function (req, res) {
 
 //Sequelized
 router.put("/:id", (req, res) => {
-    Fish.update(req.body, {
-      where: { id: req.params.id },
-      returning: true,
-    }).then((fish) => {
-      console.log(fish)
-      res.redirect("/fishes");
-    });
+  console.log(req.body)
+  Fish.update(req.body, {
+    where: { id: req.params.id },
+    returning: true,
+  }).then((fish) => {
+    console.log(fish)
+    res.redirect("/fishes");
   });
+});
 
 
 //Delete
