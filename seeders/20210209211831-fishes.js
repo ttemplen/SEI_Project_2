@@ -13,6 +13,7 @@ module.exports = {
           text: "Caught a rare tiger trout!",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userid: 1,
         },
         {
           species: "Brown Trout",
@@ -22,6 +23,7 @@ module.exports = {
           text: "One of many feral brown trout",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userid: 2,
         },
         {
           species: "Small mouth bass",
@@ -31,6 +33,7 @@ module.exports = {
           text: "Smallie caught on the Wolf River.",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userid: 3,
         },
         {
           species: "Brook Trout",
@@ -40,6 +43,7 @@ module.exports = {
           text: "green",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userid: 4,
         },
         {
           species: "Rainbow Trout",
@@ -49,6 +53,7 @@ module.exports = {
           text: "A wild cut throat trout!",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userid: 5,
         },
       ],
       {}

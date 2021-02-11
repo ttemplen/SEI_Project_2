@@ -10,7 +10,10 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      Fish.belongsTo(models.User,{
+        foreignKey:"userid"
+        
+      })
     }
   };
   Fish.init({
@@ -18,7 +21,8 @@ module.exports = (sequelize, DataTypes) => {
     img: DataTypes.STRING,
     caughtby: DataTypes.STRING,
     wherecaught: DataTypes.STRING,
-    text: DataTypes.STRING
+    text: DataTypes.STRING,
+    userid: DataTypes.INTEGER,
   }, {
     sequelize,
     modelName: 'Fish',

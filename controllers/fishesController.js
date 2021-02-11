@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 //Add Fish model
-
 const Fish = require('../models').Fish;
+const User = require('../models').User;
 
 //NEW
 router.get('/new',(req,res)=>{
@@ -11,22 +11,13 @@ router.get('/new',(req,res)=>{
     })
 ///POST
 /// sequelized
-router.post("/", (req, res) => {
-    
-  
+router.post("/", (req, res) => { 
     Fish.create(req.body).then((newFish) => {
       res.redirect("/fishes");
     });
   });
 
 // Add index route
-
-// router.get('/', (req, res) => {
-//     res.render('index.ejs', {
-//         fruits: fruits
-//     });
-// });
-///now for sequalize...
 
 router.get("/", (req, res) => {
   Fish.findAll().then((fishes) => {
@@ -39,9 +30,10 @@ router.get("/", (req, res) => {
 //Show
 /// sequelize
 router.get("/:id", (req, res) => {
+  console.log("open fish", req.params.id)
     Fish.findByPk(req.params.id).then((fish) => {
       res.render("show.ejs", {
-        fishes: fishes,
+        fish: fish,
       });
     });
   });
@@ -62,6 +54,7 @@ router.put("/:id", (req, res) => {
       where: { id: req.params.id },
       returning: true,
     }).then((fish) => {
+      console.log(fish)
       res.redirect("/fishes");
     });
   });

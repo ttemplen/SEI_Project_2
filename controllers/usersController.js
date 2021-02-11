@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const User = require('../models').User;
+const Fish = require('../models').Fish;
 
 
 // Add index route
@@ -47,7 +48,7 @@ router.post('/profile', (req, res)=>{
  router.get("/profile/:id", (req, res) => {
     User.findByPk(req.params.id) .then((thisUser) =>{
     res.render("users/profile.ejs", {
-        userInfo: thisUser, //the fruit object
+        userInfo: thisUser, 
 			index: req.params.id    
     })
     
@@ -55,11 +56,7 @@ router.post('/profile', (req, res)=>{
     });
 })
 
-// router.put("/profile/:index", (req, res) => { 
-//     users[req.params.index] = req.body; 
-//     let index = req.params.index ;
-//     res.redirect('/users/profile/'+index); 
-// });
+
 router.put("/profile/:id", (req, res) => {
         User.update(req.body, {
       where: { id: req.params.id },

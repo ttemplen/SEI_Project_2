@@ -8,14 +8,14 @@
     <body>
         <h1>Edit Fishing Page</h1>
         <!--  ADD action attribute to form tag-->
-        <form action="/fishes/<%=fish.id%>?_method=PUT" method="POST">
+        <form action="/fishes/<%=fishes.id%>?_method=PUT" method="POST">
             <!--  NOTE: the form is pre-populated with values for the server-->
-            Species: <input type="text" name="species" value="<%=fish.species%>" /><br />
-            Text: <input type="text" name="text" value="<%=fish.text%>" /><br />
-            Where caught: <input type="text" name="wherecaught" value="<%=fish.wherecaught%>" /><br />
-            Image: <img src="<%= fish.img %>" alt="Fish Picture">
+            Species: <input type="text" name="species" value="<%=fishes.species%>" /><br />
+            Text: <input type="text" name="text" value="<%=fishes.text%>" /><br />
+            Where caught: <input type="text" name="wherecaught" value="<%=fishes.wherecaught%>" /><br />
+            Image: <img src="<%= fishes.img %>" alt="Fish Picture">
             <h3>
-                Img: <input type="text" name="text" value="<%=fish.text%>" /><br />
+                Img: <input type="text" name="text" value="<%=fishes.text%>" /><br />
             </h3>
     
     
