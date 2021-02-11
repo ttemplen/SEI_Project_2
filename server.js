@@ -19,6 +19,7 @@ app.use(express.urlencoded({ extended: true }))
 //Controllers
 app.use("/fishes", require("./controllers/fishesController"));
 app.use("/users", require("./controllers/usersController.js"));
+//app.get('/')
 //MIDDLEWARE ends
  
 
