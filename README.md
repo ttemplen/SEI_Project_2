@@ -3,6 +3,16 @@ Full CRUD App project
 cdelscode 
 For SEI project 2 I chose to create a fishing report app.
 
+The app is available at:
+https://tt92729seiproject2.herokuapp.com/users
+
+username: sh
+password: sh
+
+Or
+
+Use the sign up link to create your own user and log in.
+
 Tools used include:
     - Visual Studio Code, used for code developement.
     - Postgres SQL server and PGMDatadbase admin
