@@ -10,13 +10,15 @@
         <ul>
             <% for(let i = 0; i < fishes.length; i++){ %>
                 <li>
-            <a href="/fishes/<%= fishes[i].id %>"> <%=fishes[i].species%> </a>
+            <a href="/fishes/<%= fishes[i].id %>"> <%=fishes[i].species%> </a> <br/>
             <!--  ADD DELETE FORM HERE-->
-            <form action="/fishes/<%= fishes[i].id %>?_method=DELETE" method="POST">
-                <input type="submit" value="DELETE"/>
-            </form>
+           
             <!-- Add edit link here  -->
-			<a href="/fishes/<%= fishes[i].id %>/edit">Edit</a>
+			<a href="/fishes/<%= fishes[i].id %>/edit">Edit</a><br/>
+
+            <form action="/fishes/<%= fishes[i].id %>?_method=DELETE" method="POST">
+                <input type="submit" value="DELETE"/><br/><br/>
+            </form>
                 </li>
             <% } %>
         </ul>
